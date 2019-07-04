@@ -1,2 +1,5 @@
 # Daily-Coding-Challenge
-In the project , I attempt to solve all the coding challenges in python ,JavaScript , Java and C
+I created a new gmail account and subscriped at https://www.dailycodingproblem.com/
+
+In this repo I answer all those problems in Python , C ,JavaScript and Java
+
