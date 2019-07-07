@@ -9,10 +9,8 @@
 #If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 
 from functools import reduce
-from copy import deepcopy
 
 the_list = [1,2,3,4,5]
-ls_copy = deepcopy(the_list)
 
 expected_output = []
 
