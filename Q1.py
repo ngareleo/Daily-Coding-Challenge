@@ -11,6 +11,5 @@ def any_two(array,k):
         for i in array:
             if ( sp + i == k ):
                 return True
-            pass
-            return False
+    return False
 print(any_two(sample,k))
