@@ -8,12 +8,7 @@ int main()
 {
     int k = 10;
     int arr [10] ={ 1,2,3,4,5,6,7,8,9,10};//Our test array
-    if ( check_array(arr,k) == 0){
-        printf("True");
-    }
-    else{
-        printf("false");
-    }
+    ( check_array(arr,k) == 0) ? printf("True") : printf("False");
     return 0;
 }
 
@@ -22,7 +17,7 @@ int check_array( int arr[],int k ){
     for ( int i = 0 ; i < 10 ; ++i){
         for ( int j = 0 ; j <10 ;++j){
             if ( arr[i] +arr[j] == k ){
-                return 0;//REpresntation of true
+                return 0;//Representation of true
             }
         }
     }
