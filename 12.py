@@ -78,7 +78,6 @@ class Dictionary(LinkedList):
          p  b c
 
          we need to transverse through the Dictionary looking for the lead letter we need
-
          We then look for nodes that pre-exist that are linked to the lead letter
 
 
