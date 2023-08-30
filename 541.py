@@ -7,6 +7,9 @@ Implement run-length encoding and decoding.
 You can assume the string to be encoded have no digits and consists solely of alphabetic characters.
 You can assume the string to be decoded is valid.
 """
+
+import unittest
+
 sample_str = "DAAAABBBCCDACDDD"
 
 
@@ -24,4 +27,11 @@ def encode(string):
     return ret_str
 
 
-print(encode(sample_str))
+class TestEncoding(unittest.TestCase):
+
+    def test_sample_string(self):
+        self.assertEqual(encode("AAAABBBCCDAA"), "4A3B2C1D2A")
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -11,7 +11,8 @@ In the case above, for example, there must be coins with value 2, 3, and 4.
 
 def units_of_denom(arr):
     single_units = [i for i in range(len(arr)) if arr[i] == 1 and i != 0]
-    missing_units = [j for j in range(len(arr)) if arr[j] != 1 and arr[j] != 0 and j != 0]
+    missing_units = [j for j in range(
+        len(arr)) if arr[j] != 1 and arr[j] != 0 and j != 0]
     for unit in missing_units:
         # we look for ways to make the unit and compare
         pass
