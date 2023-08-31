@@ -24,4 +24,3 @@ for c, i in enumerate(arr):
 
     ret.append(count)
 print(ret)
-
