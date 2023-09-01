@@ -11,15 +11,15 @@ You can assume the string to be decoded is valid.
 sample_str = "DAAAABBBCCDACDDD"
 
 
-def encode(string):
+def encode(payload):
     c = count = 0
     encoded = ""
-    while c < len(string) - 1:
-        if string[c] == string[c+1]:
+    while c < len(payload) - 1:
+        if payload[c] == payload[c+1]:
             count += 1
         else:
-            encoded += f"{count+1}{string[c]}"
+            encoded += f"{count+1}{payload[c]}"
             count = 0
         c += 1
-    encoded += f"{count + 1}{string[c]}"
+    encoded += f"{count + 1}{payload[c]}"
     return encoded
