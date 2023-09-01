@@ -1,5 +1,3 @@
-import unittest
-
 """
 This problem was asked by Google.
 
