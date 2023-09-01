@@ -8,20 +8,18 @@ You can assume the string to be encoded have no digits and consists solely of al
 You can assume the string to be decoded is valid.
 """
 
-import unittest
-
 sample_str = "DAAAABBBCCDACDDD"
 
 
 def encode(string):
     c = count = 0
-    ret_str = ""
+    encoded = ""
     while c < len(string) - 1:
         if string[c] == string[c+1]:
             count += 1
         else:
-            ret_str += f"{count+1}{string[c]}"
+            encoded += f"{count+1}{string[c]}"
             count = 0
         c += 1
-    ret_str += f"{count + 1}{string[c]}"
-    return ret_str
+    encoded += f"{count + 1}{string[c]}"
+    return encoded
