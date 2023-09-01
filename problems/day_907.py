@@ -6,5 +6,7 @@ Gray code is common in hardware so that we don't see temporary spurious values d
 
 Given a number of bits n, generate a possible gray code for it.
 
-For example, for n = 2, one gray code would be [00, 01, 11, 10].
+For example, for n = 2, one gray code would be [00, 01, 11, 10]. {0, 1, 3, 2}
 """
+
+# 3 -> [000, 001, 010, 100, 111, ]
